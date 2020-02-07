@@ -1,5 +1,4 @@
 *.docx
-combined_data.csv
 *.xlsx
 
 ### JupyterNotebooks ###

@@ -8,9 +8,9 @@ suppressMessages(library(PerformanceAnalytics)) # visualizing more correlation s
 ## READ DATA
 
 # set up path and read in raw (use native read.csv for stringAsFactors = True)
-setwd("/Users/matthew/github/duolingo")
-survey_raw <- read.csv("survey_data.csv") %>% as_tibble()
-usage_raw <- read.csv("survey_users_app_usage.csv") %>% as_tibble()
+setwd("/Users/matthew/github/DuolingoAnalysis")
+survey_raw <- read.csv("data/survey_data.csv") %>% as_tibble()
+usage_raw <- read.csv("data/survey_users_app_usage.csv") %>% as_tibble()
 
 ## HELPERS
 
@@ -218,4 +218,4 @@ p4 <- df %>%
 multiplot(p1, p3, p2, p4, cols=2)
 
 # WRITE OUT DATA
-write_csv(df, "combined_data.csv")
+write_csv(df, "data/combined_data.csv")
